@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System Fundamentals - Questions and Answers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        p, li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operating System Fundamentals - Questions and Answers</h1>
+
+    <h2>1. Which software of Computer System controls an execution of any application program? Define it.</h2>
+    <p>The software that controls the execution of any application program is the <strong>Operating System (OS)</strong>. It is a system software that acts as an interface between the user and the computer hardware, managing hardware and software resources, and providing common services for computer programs.</p>
+
+    <h2>2. Can users of computer system access computer hardware directly? Give the process of accessing computer hardware.</h2>
+    <p>No, users cannot access computer hardware directly. The process of accessing computer hardware is managed by the operating system, which acts as an intermediary. The OS provides a set of system calls and APIs that allow applications to interact with the hardware indirectly.</p>
+
+    <h2>3. Which hardware and software resources are managed by operating system? Discuss it.</h2>
+    <p>The operating system manages various hardware and software resources, including:</p>
+    <ul>
+        <li><strong>Processor(s)</strong></li>
+        <li><strong>Memory (RAM)</strong></li>
+        <li><strong>Hard Disk Storage</strong></li>
+        <li><strong>Removable Media</strong></li>
+        <li><strong>Input Devices</strong></li>
+        <li><strong>Software applications and processes</strong></li>
+    </ul>
+
+    <h2>4. Explain limitations of serial processing era of Operating System.</h2>
+    <p>Limitations of the serial processing era include:</p>
+    <ul>
+        <li><strong>Scheduling Issues</strong>: Users had to sign up for computer time, leading to inefficient use of processing time.</li>
+        <li><strong>Setup Time</strong>: Significant time was spent setting up the environment for each job, resulting in wasted time.</li>
+    </ul>
+
+    <h2>5. Differentiate the following terms:</h2>
+    <ul>
+        <li><strong>(a) Serial Processing and Batch System</strong>:<br>
+            <strong>Serial Processing</strong>: Users interacted directly with hardware, no OS, manual job scheduling.<br>
+            <strong>Batch System</strong>: Jobs were batched and processed sequentially by a monitor program, no direct user interaction with hardware.
+        </li>
+        <li><strong>(b) Batch System and Multiprogramming</strong>:<br>
+            <strong>Batch System</strong>: Jobs processed one at a time, sequentially.<br>
+            <strong>Multiprogramming</strong>: Multiple jobs are loaded into memory and executed by the CPU simultaneously to maximize utilization.
+        </li>
+        <li><strong>(c) Multiprogramming and Time Sharing System</strong>:<br>
+            <strong>Multiprogramming</strong>: Focuses on maximizing CPU utilization by running multiple programs.<br>
+            <strong>Time Sharing System</strong>: Extends multiprogramming by allowing multiple users to interact with the system simultaneously.
+        </li>
+        <li><strong>(d) Serial Processing and Multiprogramming</strong>:<br>
+            <strong>Serial Processing</strong>: Single job execution, direct hardware interaction.<br>
+            <strong>Multiprogramming</strong>: Multiple jobs executed concurrently, managed by the OS.
+        </li>
+        <li><strong>(e) Batch System and Time Sharing System</strong>:<br>
+            <strong>Batch System</strong>: Jobs processed in batches without user interaction.<br>
+            <strong>Time Sharing System</strong>: Multiple users interact with the system simultaneously, sharing CPU time.
+        </li>
+        <li><strong>(f) Serial Processing and Time Sharing System</strong>:<br>
+            <strong>Serial Processing</strong>: Single job execution, no OS.<br>
+            <strong>Time Sharing System</strong>: Multiple users interact with the system simultaneously.
+        </li>
+        <li><strong>(g) Distributed Operating System and Network Operating System</strong>:<br>
+            <strong>Distributed OS</strong>: Manages a group of distinct computers and makes them appear as a single coherent system.<br>
+            <strong>Network OS</strong>: Provides services to computers connected over a network, managing data, users, and security.
+        </li>
+    </ul>
+
+    <h2>6. Explain different types of Real Time operating Systems.</h2>
+    <p>Real-Time Operating Systems (RTOS) are designed to process data as it comes in, typically without buffering delays. They are used in environments where a large number of events, mostly external to the computer system, must be accepted and processed in a short time or within certain deadlines.</p>
+
+    <p><strong>Hard Real-Time Systems:</strong></p>
+    <ul>
+        <li><em>Definition:</em> These systems have strict timing constraints. The tasks must be completed within the specified time frame.</li>
+        <li><em>Characteristics:</em></li>
+        <ul>
+            <li>Predictable and deterministic.</li>
+            <li>Used in critical applications where failure to meet deadlines can lead to catastrophic consequences (e.g., medical systems, industrial control systems).</li>
+        </ul>
+        <li><em>Example:</em> Airbag systems in cars, where the response time is critical.</li>
+    </ul>
+
+    <p><strong>Soft Real-Time Systems:</strong></p>
+    <ul>
+        <li><em>Definition:</em> These systems have more relaxed timing constraints compared to hard real-time systems. Some delays are acceptable.</li>
+        <li><em>Characteristics:</em></li>
+        <ul>
+            <li>Less critical than hard real-time systems.</li>
+            <li>Used in applications where occasional deadline misses are tolerable but should be minimized.</li>
+        </ul>
+        <li><em>Example:</em> Multimedia systems, where occasional delays in data processing do not cause significant issues.</li>
+    </ul>
+
+    <h2>7. Give advantages and disadvantages of Time Sharing System.</h2>
+    <p><strong>Advantages:</strong></p>
+    <ul>
+        <li><strong>Quick Response:</strong> Users receive immediate feedback, which improves the user experience.</li>
+        <li><strong>Efficient CPU Utilization:</strong> Reduces CPU idle time by switching between tasks, ensuring that the CPU is always working on something.</li>
+        <li><strong>Resource Sharing:</strong> Multiple users can share resources such as printers, storage, and processing power, leading to cost savings.</li>
+    </ul>
+    <p><strong>Disadvantages:</strong></p>
+    <ul>
+        <li><strong>Reliability Issues:</strong> The system must be highly reliable to handle multiple users simultaneously. Any failure can affect all users.</li>
+        <li><strong>Security Concerns:</strong> Ensuring the security and integrity of user data and programs is challenging, as multiple users access the system concurrently.</li>
+        <li><strong>Complexity:</strong> Managing and maintaining a time-sharing system is complex due to the need for efficient scheduling and resource allocation.</li>
+    </ul>
+
+    <h2>8. Microsoft Windows Server is an example of which type of operating system? Explain this type of operating systems in details.</h2>
+    <p>Microsoft Windows Server is an example of a <strong>Network Operating System (NOS)</strong>.</p>
+    <p><strong>Definition:</strong> A Network Operating System runs on a server and provides the capability to manage data, users, groups, security, applications, and other networking functions.</p>
+    <p><strong>Characteristics:</strong></p>
+    <ul>
+        <li><strong>Centralized Management:</strong> Provides centralized control over network resources, making it easier to manage and secure the network.</li>
+        <li><strong>Resource Sharing:</strong> Allows multiple computers to share resources such as files, printers, and applications.</li>
+        <li><strong>User Management
